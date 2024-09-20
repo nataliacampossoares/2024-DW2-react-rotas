@@ -5,6 +5,9 @@ import {
   IconInfoCircle,
   IconRouteAltLeft,
   IconSquareRoundedNumber1,
+  IconSquareRoundedNumber2,
+  IconSquareRoundedNumber3,
+  IconSquareRoundedNumber4,
 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
@@ -66,6 +69,18 @@ export function Menu() {
         <NavLink to="semEstado" className={getEstilo}>
           <IconSquareRoundedNumber1 />
           Sem Estado
+        </NavLink>
+        <NavLink to="comEstado" className={getEstilo}>
+          <IconSquareRoundedNumber2 />
+          Com Estado
+        </NavLink>
+        <NavLink to="campoTexto" className={getEstilo}>
+          <IconSquareRoundedNumber3 />
+          Campo Texto
+        </NavLink>
+        <NavLink to="contador" className={getEstilo}>
+          <IconSquareRoundedNumber4 />
+          Contador
         </NavLink>
       </nav>
 

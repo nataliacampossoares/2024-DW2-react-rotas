@@ -14,6 +14,9 @@ import { Sobre } from "./pages/Sobre";
 import { Pagina404 } from "./pages/Pagina404";
 import { Layout } from "./pages/_Layout";
 import { SemEstado } from "./pages/Estado/SemEstado";
+import { ComEstado } from "./pages/Estado/ComEstado";
+import { CampoTexto } from "./pages/Estado/CampoTexto";
+import { Contador } from "./pages/Estado/Contador";
 
 // const rotas = createBrowserRouter([
 //   {path:"/", element: <Home/>},
@@ -31,6 +34,9 @@ const rotas = createBrowserRouter(
       <Route path="contato" element={<Contato />} />
       <Route path="sobre" element={<Sobre />} />
       <Route path="semEstado" element={<SemEstado />} />
+      <Route path="comEstado" element={<ComEstado/>}/>
+      <Route path="campoTexto" element={<CampoTexto/>}/>
+      <Route path="contador" element={<Contador/>}/>
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )
