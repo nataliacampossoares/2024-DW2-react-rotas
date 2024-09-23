@@ -16,12 +16,12 @@ export function Contador() {
 
   const [number, setNumber] = useState(0)
 
-  function removeNumber(){
-    setNumber(number-step)
-  }
-
   function addNumber(){
     setNumber(number+step)
+  }
+
+  function removeNumber(){
+    setNumber(number-step)
   }
 
   return (
