@@ -3,6 +3,8 @@ import {
   IconBrandReact,
   IconHome,
   IconInfoCircle,
+  IconMessageDown,
+  IconMessageUp,
   IconRouteAltLeft,
   IconSquareRoundedNumber1,
   IconSquareRoundedNumber2,
@@ -20,12 +22,6 @@ export function Menu() {
       hover:bg-zinc-900 `;
     let ativo = "border-r-4 border-solid border-slate-800 ";
 
-    // let final
-    // if (props.isActive){
-    //     final = estilo + ativo
-    // } else {
-    //     final = estilo
-    // }
     let final = props.isActive ? estilo + ativo : estilo;
 
     return final;
@@ -81,6 +77,17 @@ export function Menu() {
         <NavLink to="contador" className={getEstilo}>
           <IconSquareRoundedNumber4 />
           Contador
+        </NavLink>
+
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Comunicação</span>
+
+        <NavLink to="comunicacaoDireta" className={getEstilo}>
+          <IconMessageDown/>
+          Comunicação Direta
+        </NavLink>
+        <NavLink to="comunicacaoIndireta" className={getEstilo}>
+          <IconMessageUp/>
+          Comunicação Indireta
         </NavLink>
       </nav>
 
