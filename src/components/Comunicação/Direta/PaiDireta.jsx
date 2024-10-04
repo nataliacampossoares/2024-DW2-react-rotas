@@ -3,11 +3,11 @@ import { FilhoDireta } from "./FilhoDireta"
 
 export function PaiDireta() {
 
-    const [nome, setNome] = useState("")
+    const [nome, setNome] = useState("Filho direta")
 
     return (
         <div className={`
-                w-full flex flex-col items-center p-7 rounded-md bg-blue-500 text-white g-4
+                w-full flex flex-col items-center p-7 rounded-md bg-zinc-700 text-white g-4
                 `}>
 
             <div className="flex gap-3">

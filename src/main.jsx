@@ -19,15 +19,8 @@ import { CampoTexto } from "./pages/Estado/CampoTexto";
 import { Contador } from "./pages/Estado/Contador";
 import { ComunicacaoDireta } from "./pages/Comunicação/ComunicacaoDireta";
 import { ComunicacaoIndireta } from "./pages/Comunicação/ComunicacaoIndireta";
-
-
-// const rotas = createBrowserRouter([
-//   {path:"/", element: <Home/>},
-//   {path:"/home", element: <Home/>},
-//   {path:"/contato", element: <Contato/>},
-//   {path:"/sobre", element: <Sobre/>},
-//   {path:"*", element: <Pagina404/>},
-// ])
+import { UseRef } from "./pages/Hooks-básicos/UseRef";
+import { UseEffect } from "./pages/Hooks-básicos/UseEffect";
 
 const rotas = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +35,8 @@ const rotas = createBrowserRouter(
       <Route path="contador" element={<Contador/>}/>
       <Route path="comunicacaoDireta" element={<ComunicacaoDireta/>}/>
       <Route path="comunicacaoIndireta" element={<ComunicacaoIndireta/>}/>
+      <Route path="useRef" element={<UseRef/>}/>
+      <Route path="useEffect" element={<UseEffect/>}/>
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

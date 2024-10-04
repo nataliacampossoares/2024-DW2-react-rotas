@@ -1,4 +1,4 @@
-import { PaiIndireta } from "../../components/Comunicacao/Indireta/PaiIndireta"
+import { PaiIndireta } from "../../components/Comunicação/Indireta/PaiIndireta"
 import { Pagina } from "../../components/Pagina"
 
 export function ComunicacaoIndireta() {

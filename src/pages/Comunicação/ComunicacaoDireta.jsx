@@ -1,4 +1,4 @@
-import { PaiDireta } from "../../components/Comunicacao/Direta/PaiDireta"
+import { PaiDireta } from "../../components/Comunicação/Direta/PaiDireta"
 import { Pagina } from "../../components/Pagina"
 
 export function ComunicacaoDireta() {
